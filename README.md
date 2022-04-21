@@ -352,7 +352,7 @@ Final Matrices: Matrix A = |   20  |     Matrix B = |   17  |     Matrix X = |  
 ```
 Note that history is appended to the end of the file so all your previous sessions are still recorded in the file.
 
-##Features and concepts used in my implementation of the solution 
+## Features and concepts used in my implementation of the solution 
 
 - Lists (Dynamic Array) and Dictionaries (Hash Table)
 - Object Oriented Programming
