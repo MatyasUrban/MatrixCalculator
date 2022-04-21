@@ -4,21 +4,21 @@ This is my final programming project of the first class in programming [NPRG030]
 
 Designed, developed and programmed by [Matyas Urban](https://www.linkedin.com/in/matyasurban/) in March 2020.
 
-##Goal and Task
+## Goal and Task
 
 The goal of this project is to create a program that supports commong matrix operations and allows the user to manipulate matrices and investigate them (using a terminal/command prompt).
 
-###Detailed Description
+### Detailed Description
 The program will load two matrices from a text file. Then the user will interact within the terminal by performing operations on the matrices. Each user request and each request result will be printed and will be appended to another text file, which will serve as calculator history. The matrices resulting from the operations will have to be stored for continuation of other calculations. Either overwriting the starting matrices or overwriting a third matrix available as a storage variable.
 
-##Input Structure
+## Input Structure
 
 For the program to function correctly there must be 3 files in the same directory:
 - matrixCalculator.py 
 - input.txt 
 - record.txt 
 
-###input.txt
+### input.txt
 
 In this file must be two matrices as text form in the following format:
 
@@ -46,7 +46,7 @@ Please use single or double digit number for pleasant experience with the progra
 
 For simplicity and precision I decided to restrict my program only to integer values, be it matrix elements, or scaling a matrix, user input must always be integer.
 
-###matrixCalculator.py 
+### matrixCalculator.py 
 
 When the input.txt is correctly formatted, you are ready to go and run matrixCalculator.py.
 
@@ -97,7 +97,7 @@ MUL (multiplication) outputs the product of two given matrices and saves it into
 ```
 Now I will introduce the command structure
 
-####PRI matrix
+#### PRI matrix
 
 Matrix can only be A/B/X. For example, let's find out what matrix A holds now by typing 'PRI A'':
 ```
@@ -108,7 +108,7 @@ Matrix A = |   -1  2   |
            |   5   -3  |
 ```
 
-####DET matrix
+#### DET matrix
 
 Matrix can only be A/B/X. For example, let's find out what the determinant of matrix A is by typing 'DET A'':
 ``` 
@@ -119,7 +119,7 @@ det(|   -1  2   |) = -7
     |   5   -3  |      
 ```
 
-####INV matrix
+#### INV matrix
 
 Matrix can only be A/B/X. For example, let's find out whether A is invertible by typing 'INV A':
 ``` 
@@ -130,7 +130,7 @@ Working...
 |   5   -3  |    
 ```
 
-####TRA save_at_matrix given_matrix
+#### TRA save_at_matrix given_matrix
 This transposes the given matrix and saves the result into save at matrix. Both arguments must be A/B/X. Let's transpose A and overwrite its value. Then, let's print A to check that it has been indeed overwritten.
 
 ``` 
@@ -149,7 +149,7 @@ Matrix A = |   -1  5   |
            |   2   -3  |
 ```
 
-####SCA save_at_matrix given_matrix scalar
+#### SCA save_at_matrix given_matrix scalar
 This scales the given matrix by integer scalar and saves it into save at matrix. Both arguments must be A/B/X and the third one an integer. Let's scale B by -2 and save it to X. We will verify again by printing relevant matrices.
 
 ``` 
@@ -204,7 +204,7 @@ Matrix X = |   11  -20 |
            |   -8  19  |
 ```
 
-####MUL save_at_matrix matrix_1 matrix_2
+#### MUL save_at_matrix matrix_1 matrix_2
 This multiplies matrix 1 and matrix 2 and saves the result into save at matrix. All three arguments must be A/B/X. Let's multiply A and B and store it into A.
 
 ``` 
@@ -223,7 +223,7 @@ Matrix A = |   17  |
            |   -6  |
 ```
 
-####ADD save_at_matrix matrix_1 matrix_2
+#### ADD save_at_matrix matrix_1 matrix_2
 This adds matrix 1 and matrix 2 and saves the result into save at matrix. All three arguments must be A/B/X. Let's sum A and B up and store it into A.
 
 ``` 
@@ -241,7 +241,7 @@ Working...
 Matrix A = |   20  |
            |   -2  |
 ```
-####SUB save_at_matrix matrix_1 matrix_2
+#### SUB save_at_matrix matrix_1 matrix_2
 This subtracts matrix 1 and matrix 2 and saves the result into save at matrix. All three arguments must be A/B/X. Let's subract A and B and store it into B.
 
 ``` 
@@ -260,7 +260,7 @@ Matrix B = |   17  |
            |   -6  |
 ```
 
-####END 
+#### END 
 This prints the final state of all three matrices and ends the program. 
 
 ```
@@ -272,7 +272,7 @@ Final Matrices: Matrix A = |   20  |     Matrix B = |   17  |     Matrix X = |  
 
 Goodbye.
 ```
-###record.txt 
+### record.txt 
 
 This file does not require any action on your part. However, it includes useful information about your session with the calculating, outlining every request and every result in a very organized way. The history of a session is available after you write the `END` command or after you kill the program from IDE controls.
 If you are interested, here is the history of operations described above:
