@@ -2,7 +2,7 @@
 
 This is my final programming project of the first class in programming [NPRG030](https://is.cuni.cz/studium/eng/predmety/index.php?do=predmet&kod=NPRG030) as part of my Computer Science undergraduate curriculum at Charles University, Prague, CZ, EU. 
 
-Designed, developed and programmed by [Matyas Urban](https://www.linkedin.com/in/matyasurban/) in March 2020.
+Designed, developed and programmed by [Matyas Urban](https://www.linkedin.com/in/matyasurban/) in March 2022.
 
 ## Goal and Task
 
